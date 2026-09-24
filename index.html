@@ -72,7 +72,7 @@
     </div>
     <div class="about-grid">
       <div class="about-card reveal">
-        <div class="profile-mark"><img src="imgs\my_profile.png" style="width: 162%; padding-top: 89px;"></div>
+        <div class="profile-mark"><img src="C:\profile\imgs\my_profile.png" style="width: 162%; padding-top: 89px;"></div>
       </div>
       <div class="reveal">
         <p class="about-text">I'm a <b>Frontend Developer</b> who enjoys transforming visual concepts into functional web experiences. My day-to-day work revolves around <b>HTML, CSS, responsive layouts, email development and modern UI implementation.</b></p>
@@ -112,12 +112,13 @@
       <p class="section-intro">Replace these sample entries with your real projects, screenshots and live links. The layout is intentionally designed to make each project feel like a case study.</p>
     </div>
     <div class="project-list">
-      <a href="#" class="project reveal project-link">
-        <span class="project-num">01</span><div><h3>Event & Exhibition Portals</h3><div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span></div></div>
+      <a href="http://www.costing-expert.com" target="_blank" class="project reveal project-link">
+        <span class="project-num">01</span><div><h3>Costing Expert</h3><div class="project-tags"><span class="tag">UI</span><span class="tag">Frontend</span><span class="tag">Bootstrap</span><span class="tag">JavaScript</span><span class="tag">React</span><span class="tag">figma</span></div></div>
         <p>Responsive event pages, exhibitor portals, navigation, banners and content-driven interfaces.</p><span class="project-arrow">↗</span>
       </a>
-      <a href="#" class="project reveal project-link">
-        <span class="project-num">02</span><div><h3>HTML Email Experiences</h3><div class="project-tags"><span class="tag">HTML</span><span class="tag">Inline CSS</span><span class="tag">Email UI</span></div></div>
+      <a href="https://paralympicindia.com/" target="_blank" class="project reveal project-link">
+        <span class="project-num">02</span><div><h3>Paralympic Committee of India
+</h3><div class="project-tags"><span class="tag">Wordpress</span><span class="tag">customised Plugin</span><span class="tag">Inline CSS</span><span class="tag">Email UI</span></div></div>
         <p>Responsive email templates built with compatibility, spacing and real-world rendering in mind.</p><span class="project-arrow">↗</span>
       </a>
       <a href="#" class="project reveal project-link">
@@ -170,12 +171,58 @@
         <h2>LET'S MAKE<br>SOMETHING <span>GOOD.</span></h2>
         <p style="color:var(--muted);line-height:1.7;margin-top:25px;max-width:430px">Have a website, UI, landing page or frontend project in mind? Send me a message and let's start a conversation.</p>
       </div>
-      <form class="contact-form" id="contactForm">
-        <input class="field" type="text" placeholder="Your name" required>
-        <input class="field" type="email" placeholder="Your email" required>
-        <textarea class="field" placeholder="Tell me about your project..." required></textarea>
-        <button class="btn primary magnetic" type="submit">Send message ↗</button>
-      </form>
+  <form class="contact-form" id="contactForm">
+
+    <input
+        type="hidden"
+        name="access_key"
+        value="246864bb-2fb8-42de-9428-ed9d59b13756"
+    >
+
+    <input
+        type="hidden"
+        name="subject"
+        value="New Portfolio Inquiry"
+    >
+
+    <input
+        class="field"
+        type="text"
+        name="name"
+        placeholder="Your name"
+        required
+    >
+
+    <input
+        class="field"
+        type="email"
+        name="email"
+        placeholder="Your email"
+        required
+    >
+
+    <textarea
+        class="field"
+        name="message"
+        placeholder="Tell me about your project..."
+        required
+    ></textarea>
+
+    <button
+        class="btn primary magnetic"
+        type="submit"
+    >
+        Send message ↗
+    </button>
+
+    <div id="formMessage" style="
+        display:none;
+        margin-top:15px;
+        text-align:center;
+        font-size:14px;
+    "></div>
+
+</form>
     </div>
   </div>
 </section>
